@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod sudo a+x 
+sudo chmod a+x 
