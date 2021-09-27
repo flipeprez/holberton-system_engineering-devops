@@ -1,2 +1,2 @@
 #!/bin/bash 
-echo PS1 \ "(Ôo)'  
+echo PS1 \a "(Ôo)'"    
