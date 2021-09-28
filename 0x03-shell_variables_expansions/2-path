@@ -1,2 +1,2 @@
 #!/bin/bash
-$ echo $PATH | tail -f /action  
+$PATH =$PATH + $_action   
