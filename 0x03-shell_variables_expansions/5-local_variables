@@ -1,2 +1,2 @@
 #!/bin/bash 
-env | more set | more 
+env -n | set -n | wc -l 
