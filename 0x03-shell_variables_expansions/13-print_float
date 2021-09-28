@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%.1f'"$NUM"
+printf ("%.1f\n", $NUM)
