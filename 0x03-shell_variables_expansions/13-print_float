@@ -1,2 +1,2 @@
 #!/bin/bash
-echo NUM $ printf '%1.1f'
+printf '%.1f'"$NUM"
