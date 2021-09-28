@@ -1,2 +1,2 @@
 #!/bin/bash 
-echo "replace all characters" | tr 'a' 'c' | tr 'z' 'e'
+echo "$string" | tr 'a' 'c' | tr 'z' 'e'
