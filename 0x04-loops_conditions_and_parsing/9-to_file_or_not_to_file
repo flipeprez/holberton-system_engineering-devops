@@ -7,13 +7,13 @@ then
 	
 	if [ -s "$FILE" ]
 	then
-		echo "$FILE file is empty"
+		echo "school file is empty"
 	else
-		echo "$FILE file is not empty"
+		echo "school file is not empty"
 	fi
 	if [ -f "$FILE" ]
 	then
-		echo "$FILE is a regular file"
+		echo "school is a regular file"
 	fi 
 else
 	echo "$FILE file does not exist"
