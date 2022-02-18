@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # gives information about school file.
-file=i"school"
+file="school"
 if [ -e "$file" ]
 then
 	echo "$file file exists"	
