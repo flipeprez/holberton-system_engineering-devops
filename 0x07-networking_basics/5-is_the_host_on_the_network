@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # pings as ip address passed as an argument
 if $# eq-0
-then echo"Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+then echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 fi
-ping "$1" -c5
+ping "$1" -c 5
