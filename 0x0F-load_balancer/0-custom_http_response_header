@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Installing and starting nginx and configuring redirection
 # shellcheck disable=SC2154
-sudo apt update
-sudo apt install -y nginx
+sudo apt-get update
+sudo apt-get install -y nginx
 echo "Hello World" | sudo tee /var/www/html/index.nginx-debian.html
 sudo sed -i '/^\tserver_name.*/a \\trewrite ^\/redirect_me/$ https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 permanent;\nerror_page 404 /404.html;' /etc/nginx/sites-available/default
-sed -i '/^\http {/a \\n\\tX-Served-By $HOSTNAME;' /etc/nginx/nginx.conf
+sudo sed -i '/^\http {/a \\n\\tX-Served-By $HOSTNAME;' /etc/nginx/nginx.conf
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 sudo service nginx restart
