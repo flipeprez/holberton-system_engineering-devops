@@ -2,7 +2,7 @@
 # Installing and starting nginx and configuring redirection
 sudo apt update
 sudo apt-get install -y nginx
-echo "Hello World" > /var/www/html/index.nginx-debian.html
+echo "Hello World" | sudo tee  /var/www/html/index.nginx-debian.html
 sudo sed -i '/^\tserver_name.*/a \\trewrite ^\/redirect_me/$ https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 permanent;\nerror_page 404 /404.html;' /etc/nginx/sites-available/default
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/404.html
 sudo service nginx restart
