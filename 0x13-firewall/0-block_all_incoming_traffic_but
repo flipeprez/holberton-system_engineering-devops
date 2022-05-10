@@ -3,3 +3,4 @@ sudo ufw allow https
 sudo ufw allow 22
 sudo ufw enable 
 sudo ufw status
+sudo ufw reset
