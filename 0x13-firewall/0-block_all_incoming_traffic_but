@@ -1,6 +1,7 @@
-sudo ufw allow 80/tcp
+#!/usr/bin/env bash
+#install
+sudo apt install ufw
+sudo ufw allow http
 sudo ufw allow https
-sudo ufw allow 22
-sudo ufw enable 
-sudo ufw status
-sudo ufw reset
+sudo ufw allow ssh
+echo "y" | sudo ufw enable
