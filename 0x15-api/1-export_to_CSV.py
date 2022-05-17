@@ -10,7 +10,7 @@ def todo_done(id):
     url = "https://jsonplaceholder.typicode.com/users/{}".format(id)
     response = requests.get(url)
     res_json = response.json()
-    employ_name = res_json.get("name")
+    employ_name = res_json.get("username")
 
     url = "https://jsonplaceholder.typicode.com/user/{}/todos".format(id)
     todos = requests.get(url)
@@ -21,7 +21,7 @@ def todo_done(id):
     tsk_list = ""
 
     f_name = "{}.csv".format(id)
-    
+ 
     with open(f_name, "a") as fd:
         for t2 in todos_json:
             comp = t2.get("completed")
