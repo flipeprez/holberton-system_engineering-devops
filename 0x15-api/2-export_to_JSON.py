@@ -18,7 +18,6 @@ def todo_done(id):
     todos_json = todos.json()
     tsk_list = []
 
-
     for tsk in todos_json:
         tsk_dict = {}
         tsk_dict["tsk"] = tsk.get("title")
