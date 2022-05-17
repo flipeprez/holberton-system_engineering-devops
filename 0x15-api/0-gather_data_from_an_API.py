@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+'''a nice comment'''
 import requests
 import sys
-'''a nice comment'''
 
 
 def todo_done(id):
@@ -25,7 +25,7 @@ def todo_done(id):
             tsk_completed += 1
             tsk_list += "\t" + tsk.get("title") + "\n"
 
-    print("employee {} is done with task({}/{}):".format(employ_name,
+    print("Employee {} is done with tasks({}/{}):".format(employ_name,
                                                          tsk_completed,
                                                          number_of_tsk))
     print(tsk_list[:-1])
