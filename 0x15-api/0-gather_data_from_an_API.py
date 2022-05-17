@@ -3,10 +3,11 @@ import requests
 import sys
 '''a nice comment'''
 
+
 def todo_done(id):
     '''a nice comment for checker'''
 
-    url = "https://jsonplaceholder.typicode.com/user/{}".format(id)
+    url = "https://jsonplaceholder.typicode.com/users/{}".format(id)
     response = requests.get(url)
     res_json = response.json()
     employ_name = res_json.get("name")
