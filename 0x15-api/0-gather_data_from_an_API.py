@@ -26,8 +26,8 @@ def todo_done(id):
             tsk_list += "\t" + tsk.get("title") + "\n"
 
     print("Employee {} is done with tasks({}/{}):".format(employ_name,
-                                                         tsk_completed,
-                                                         number_of_tsk))
+                                                          tsk_completed,
+                                                          number_of_tsk))
     print(tsk_list[:-1])
 
 
