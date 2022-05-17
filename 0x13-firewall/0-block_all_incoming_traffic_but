@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#install
+sudo apt install ufw
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow ssh
+echo "y" | sudo ufw enable
