@@ -21,7 +21,7 @@ def todo_done(id):
     tsk_list = ""
 
     f_name = "{}.csv".format(id)
- 
+
     with open(f_name, "a") as fd:
         for t2 in todos_json:
             comp = t2.get("completed")
