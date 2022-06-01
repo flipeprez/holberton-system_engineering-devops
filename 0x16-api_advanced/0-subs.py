@@ -1,16 +1,15 @@
-<<<<<<< HEAD
 #!/usr/bin/python3
-''' a nice comment'''
-import request
+import requests
 
 
-def number_of_suscribers(subreddit):
-    ''' a nice comments'''
-    header = {'user-agent': 'mozilla/100.0.2'}
-    url = 'https://api.reddit.com/r/{subreddit}/about.json'.format(subreddit)
-    response = request.get(url, headers=header)
+def number_of_subscribers(subreddit):
+    ''' Finds the number of subscribers in a subreddit '''
+
+    header = {'User-Agent': 'Chrome/66.0.3359.139 Mobile Safari/537.36'}
+    url = "https://api.reddit.com/r/{subreddit}/about.json".format(subreddit)
+    response = requests.get(url, headers=header)
     if response.status_code == 200:
-        sub = response.json()['data']['suscribers']
+        sub = response.json()["data"]["subscribers"]
     else:
-        subs = 0
-    return subs
+        sub = 0
+    return sub
