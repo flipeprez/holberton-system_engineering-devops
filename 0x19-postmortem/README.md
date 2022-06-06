@@ -1,4 +1,4 @@
-https://www.toonpool.com/user/589/files/post_mortem_3455855.jpg
+![alt text](https://github.com/[flipeprez]/[0x19-postmortem]/blob/[main]/post_mortem_3455855.jpg?raw=true)
 Incident report for 504 error / Site Outage
 Summary
 
